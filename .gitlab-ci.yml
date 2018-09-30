@@ -6,7 +6,7 @@ stages:
 build:
   stage: build
   script:
-    - apt-get -y update && apt-get -y install build-essential gcc-arm-linux-gnueabi u-boot-tools
+    - apt-get -y update && apt-get -y install subversion build-essential gcc-arm-linux-gnueabi u-boot-tools
     - make CROSS_COMPILE=arm-linux-gnueabi- ARCH=arm uImage
   artifacts:
     untracked: true
