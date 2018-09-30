@@ -89,3 +89,5 @@ GTAGS
 *.orig
 *~
 \#*#
+
+!.gitlab-ci.yml

@@ -1,0 +1,10 @@
+image: ubuntu:14.04
+
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - apt-get install gcc-arm-linux-gnueabi u-boot-tools
+    - make CROSS_COMPILE=arm-linux-gnueabi- ARCH=arm uImage
