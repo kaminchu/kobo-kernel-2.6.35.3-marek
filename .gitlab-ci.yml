@@ -4,6 +4,8 @@ stages:
   - build
 
 build:
+  tags:
+    - 24604.s.t4vps.eu
   stage: build
   script:
     - apt-get -y update && apt-get -y install subversion build-essential gcc-arm-linux-gnueabi u-boot-tools
